@@ -12,6 +12,37 @@ This year I linked the addresses of over 800,000 (75\%) of the patients from the
 
 Also as part of our collaboration, Dr. Shireman and I obtained an identified copy of the UHS ACS NSQIP registry going back to April of 2013. It contains records on 6408 surgeries on 5914 distinct patients. Of these, 3990 are Hispanic and 1396 are non-Hispanic Whites and together comprise the eligibility set for Dr. Espinoza's and Dr. Shireman's Pilot Project (N=5386). Of these, 4459 have incomes inferred from census data due to the geocoding efforts described above. From this dataset, in turn, I have randomly sampled a developmental dataset of 905 patients. Excepting high-level cohort characterization such as shown in Table 1, I will make all statistical decisions based only on this developmental sample, deliberately blinding myself to the validation hold-out sample. Only when model specification and variable selection are complete will I re-run my analysis on the remaining data for purposes of formal hypothesis testing and predictive validation. This should be to the left of the table. The preliminary data I am showing here is from the developmental sample.
 
+\begin{wraptable}{r}{5.5cm}
+  \caption{  N Postoperative Complications vs RAI-A}\label{wrap-tab:2}
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & Post-Op Complications \\ 
+\hline \\[-1.8ex] 
+ RAI-A & 0.104$^{***}$ (0.033) \\ 
+  & \\ 
+ Age & 0.025$^{***}$ (0.005) \\ 
+  & \\ 
+ Income & -0.00002$^{***}$ (0.00000) \\ 
+  & \\ 
+ RAI-A x Income & 0.00000$^{***}$ (0.00000) \\ 
+  & \\ 
+ RAI-A x Age & -0.002$^{***}$ (0.001) \\ 
+  & \\ 
+ Constant & -1.502$^{***}$ (0.291) \\ 
+  & \\ 
+\hline \\[-1.8ex] 
+Observations & 757 \\ 
+Log Likelihood & -994.605 \\ 
+Akaike Inf. Crit. & 2,001.209 \\ 
+\hline 
+\hline \\[-1.8ex] 
+  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{wraptable} 
+
 I have calculated a partial RAI-A score (partial because one of the needed variables, "impaired sensorium", appears to have been discontinued in NSQIP as of 2015). Nevertheless, this partial RAI-A is significantly correlated with the number of post-operative complications recorded in NSQIP excluding urinary tract infections and superficial surgical site infections. Age at time of surgery also has a significant correlation with number of complications and income has a significant inverse correlation. Furthermore, the higher the income, the stronger the correlation between RAI-A and number of complications, and the greater the age, the weaker the correlation. \ref{wrap-tab:2} More text
 
 A Cox proportional hazard model with RAI-A as the predictor and number of days from surgery until either death or readmission with a 30-day followup reports a 7.8\% increase for each unit of increase in RAI-A.
