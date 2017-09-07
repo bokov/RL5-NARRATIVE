@@ -1,7 +1,43 @@
 
 I also followed the process for developing a frailty measure recommended by Rockwood \cite{Rockwood_2005}. This frailty metric is even more strongly correlated with both outcomes and even in this small sample has a similar probability distribution to the original frailty measure derived by Rockwood \cite{Mitnitski_2001} in a completely different dataset with different component variables, but chosen using the same methodology.
 
-[TABLE 4 Postop vs Rockwood]
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} } 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & \multicolumn{1}{c}{a\_postop} \\ 
+\hline \\[-1.8ex] 
+ a\_rockwood & 10.878^{***} \\ 
+  & (2.319) \\ 
+  & \\ 
+ income\_final & -0.00001^{***} \\ 
+  & (0.00000) \\ 
+  & \\ 
+ age\_at\_time\_surg & 0.021^{***} \\ 
+  & (0.006) \\ 
+  & \\ 
+ a\_rockwood:age\_at\_time\_surg & -0.120^{***} \\ 
+  & (0.040) \\ 
+  & \\ 
+ a\_rockwood:income\_final & 0.00004 \\ 
+  & (0.00003) \\ 
+  & \\ 
+ Constant & -1.900^{***} \\ 
+  & (0.365) \\ 
+  & \\ 
+\hline \\[-1.8ex] 
+Observations & \multicolumn{1}{c}{757} \\ 
+Log Likelihood & \multicolumn{1}{c}{-986.191} \\ 
+Akaike Inf. Crit. & \multicolumn{1}{c}{1,984.382} \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
 [TABLE 5 Death or Readmission vs RAI-A] [Figure 2]
 
 The following non-acute pre-operative NSQIP variables were used for this Rockwood Index: [...,...,...]
