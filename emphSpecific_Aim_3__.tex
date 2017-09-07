@@ -47,7 +47,32 @@ Akaike Inf. Crit. & 2,001.209 \\
 
 A Cox proportional hazard model with RAI-A as the predictor and number of days from surgery until either death or readmission with a 30-day followup reports a 7.8\% increase for each unit of increase in RAI-A.
 
-[TABLE 3 Death or Readmission vs RAI-A] [Figure 1]
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & a\_t \\ 
+\hline \\[-1.8ex] 
+ a\_rai & 0.076$^{***}$ \\ 
+  & (0.016) \\ 
+  & \\ 
+\hline \\[-1.8ex] 
+Observations & 905 \\ 
+R$^{2}$ & 0.019 \\ 
+Max. Possible R$^{2}$ & 0.806 \\ 
+Log Likelihood & $-$733.085 \\ 
+Wald Test & 23.360$^{***}$ (df = 1) \\ 
+LR Test & 17.758$^{***}$ (df = 1) \\ 
+Score (Logrank) Test & 23.538$^{***}$ (df = 1) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table}  [Figure 1]
 
 I also followed the process for developing a frailty measure recommended by Rockwood \cite{Rockwood_2005}. This frailty metric is even more strongly correlated with both outcomes and even in this small sample has a similar probability distribution to the original frailty measure derived by Rockwood \cite{Mitnitski_2001} in a completely different dataset with different component variables, but chosen using the same methodology.
 
